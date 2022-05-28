@@ -3,13 +3,14 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
+import { Home } from "./components/Home";
 
 function App() {
     return (
         <div className="App">
             <Header />
             <Routes>
-                {/* <Route index element={<Home />} /> */}
+                <Route index element={<Home />} />
                 {/* <Route path="about" element={<About />}></Route> */}
                 <Route path=":any" element={<Error />}></Route>
             </Routes>
