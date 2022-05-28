@@ -1,0 +1,27 @@
+:root{
+    --hello : black;
+}
+.home-root{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-head-title{
+    font-size: 80px;
+    text-align: start;
+    letter-spacing: 5px;
+    line-height: 100px;
+    margin: 0px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-basis: 60%;
+}
+.lottie-anim{
+    flex-basis: 40%;
+    margin: 0px 20px;
+}
