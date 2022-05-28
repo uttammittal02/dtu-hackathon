@@ -1,13 +1,25 @@
 import React from "react";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
+import { Home } from "./components/Home";
 
 function App() {
-  // DON'T FORGET TO CHANGE IT ~ISHWAR
-  return (
-    <div className="App">
-      <h1>Hacked the gap!</h1>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header />
+            <Routes>
+                <Route index element={<Home />} />
+                {/* <Route path="about" element={<About />}></Route> */}
+                <Route path=":any" element={<Error />}></Route>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
+
+export const Error = () => {
+    return <div>Page doesnt exist</div>;
+};
