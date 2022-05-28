@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import { Home } from "./components/Home";
-// import { AboutUs } from "./components/AboutUs";
+import AboutUs from "./components/AboutUs";
 
 function App() {
     return (
@@ -12,7 +12,7 @@ function App() {
             <Header />
             <Routes>
                 <Route index element={<Home />} />
-                {/* <Route path="about" element={<AboutUs />}></Route> */}
+                <Route path="about" element={<AboutUs />}></Route>
                 <Route path=":any" element={<Error />}></Route>
             </Routes>
         </div>
