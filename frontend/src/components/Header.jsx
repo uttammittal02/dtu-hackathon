@@ -9,7 +9,7 @@ const Header = () => {
             <div className="Header__logo">
                 <Link to="/">
 
-                <img src="logo192.png" alt="" />
+                <img src="logo.png" alt="" />
                 </Link>
             </div>
             <div className="Header__options">
@@ -20,7 +20,7 @@ const Header = () => {
             </div>
 
             <div className="Header__buttons">
-                <button>Login</button>
+                <button></button>
             </div>
         </div>
     );
