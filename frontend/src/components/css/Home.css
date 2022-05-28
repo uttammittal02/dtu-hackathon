@@ -107,8 +107,43 @@
     flex-basis: 40%;
 }
 
+.home-approach{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.approach-anim{
+    flex-basis: 40%;
+}
+
+.approach-content{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.approach-text{
+    margin-top: 40px;
+}
+
+.approach-tech{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.tech{
+    height: 100px;
+    width: auto;
+    margin: 10px 20px;
+}
+
 .home-analysis{
-    margin: 20px 30px;
+    padding: 20px 30px;
+    background-color: aliceblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
