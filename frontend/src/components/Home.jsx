@@ -7,9 +7,14 @@ export const Home = ()=>{
     return (
         <div className="home-root">
             <div className="home-head">
-                <h1 className="home-head-title">
-                    Hacked the Grocers Gap
-                </h1>
+                <div className="home-head-title-content">
+                    <h1 className="home-head-title">
+                        Hacked the Grocers Gap
+                    </h1>
+                    <div className="home-head-desc">
+                        A good app
+                    </div>
+                </div>
                 <Lottie 
                     className="lottie-anim"
                     animationData={storeAnimation}
