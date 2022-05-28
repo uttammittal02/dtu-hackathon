@@ -6,6 +6,28 @@
     flex-direction: column;
 }
 
+@keyframes anim-pop {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.anim-popout{
+    animation: anim-pop 2s ease-out;
+}
+
 .home-head{
     display: flex;
     flex-direction: row;
@@ -30,6 +52,14 @@
     margin: 0px;
 }
 
+.home-titles{
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 100px;
+    margin: 0px;
+}
+
 .home-head-desc{
     font-size: 20px;
     color: rgb(129, 127, 127);
@@ -45,14 +75,76 @@
     margin: 0px 20px;
 }
 
-.home-analysis{
-    margin: 20px 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.home-text{
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
-.home-analysis-title{
-    font-weight: bold;
-    font-size: 60px;
+.home-problem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    background-color: aliceblue;
+}
+
+.problem-title{
+    text-align: center;
+}
+
+.problem-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.problem-text{
+    flex-basis: 30%;
+}
+
+.problem-anim{
+    flex-basis: 40%;
+}
+
+.home-approach{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.approach-anim{
+    flex-basis: 40%;
+}
+
+.approach-content{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.approach-text{
+    margin-top: 40px;
+}
+
+.approach-tech{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.tech{
+    height: 100px;
+    width: auto;
+    margin: 10px 20px;
+}
+
+.home-analysis{
+    padding: 20px 30px;
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .home-analysis-section{
@@ -67,12 +159,12 @@
 }
 
 .analysis1-text{
-    font-size: 25px;
-    margin-top: 40px;
+    margin: 40px 0px;
 }
 .analysis-anim{
     flex-basis: 50%;
 }
+
 
 .analysis-img{
     width: 500px;
