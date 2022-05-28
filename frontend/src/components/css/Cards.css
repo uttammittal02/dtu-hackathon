@@ -1,0 +1,117 @@
+.card-container {
+    /* Change Padding when added work in About US */
+    padding: 30px 60px 20px 60px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+
+.card-container .person-image {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.card-container .person-image::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+.card-container:hover .person-image::before {
+    height: 100%;
+}
+
+.card-container .person-image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.card-container .person-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 1.2s ease-in-out 0s;
+}
+
+.card-container:hover .person-image img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-container .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+}
+
+.card-container .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.8s ease-in-out 0s;
+    visibility: hidden;
+}
+
+.card-container:hover .social {
+    height: 30px;
+    bottom: 0;
+    visibility: visible;
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.card-container .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.card-container .social li a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
+}
+
+.icon {
+    height: 10px;
+}

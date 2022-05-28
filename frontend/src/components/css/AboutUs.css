@@ -1,0 +1,11 @@
+.about-us-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
