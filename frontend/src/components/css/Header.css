@@ -12,6 +12,17 @@
     margin-left: 10%;
 }
 
+.Header__logo a {
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    color: black;
+}
+
+.Header__logo p {
+    height: 100%;
+}
 .Header__logo img {
     height: 100%;
     object-fit: contain;

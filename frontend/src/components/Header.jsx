@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import './css/Header.css';
+import "./css/Header.css";
 
 const Header = () => {
     return (
         <div className="Header">
             <div className="Header__logo">
                 <Link to="/">
-
-                <img src="logo.png" alt="" />
+                    <img src="logo.png" alt="" />
+                    <h2>Valuati</h2>
                 </Link>
             </div>
             <div className="Header__options">
@@ -31,7 +31,9 @@ export default Header;
 const NavbarOption = ({ name, link }) => {
     return (
         <div className="Header__option">
-            <Link to={link} className="Header__link">{name}</Link>
+            <Link to={link} className="Header__link">
+                {name}
+            </Link>
         </div>
     );
 };

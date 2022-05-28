@@ -44,7 +44,7 @@ export const Home = () => {
         <div className="home-root">
             <div className="home-head">
                 <div className="home-head-title-content anim-popout">
-                    <h1 className="home-head-title">Valuati</h1>
+                    <h1 className="home-head-title">Hacked The Grocers Gap</h1>
                     <div className="home-head-desc">
                         A comprehensive web app for supermarket sales prediction
                     </div>
