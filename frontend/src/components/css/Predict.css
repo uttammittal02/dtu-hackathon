@@ -1,0 +1,10 @@
+.predict-form {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
