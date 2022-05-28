@@ -1,14 +1,25 @@
 .result{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.analysis-img{
-    flex-basis: 40%;
+.carousal-item {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.smol-img{
-    margin: 20px;
-    flex-basis: 100%;
+.carousal-item img {
+    /* width: ; */
+    height: 400px;
+    object-fit: contain;
+}
+
+.desc-carousal {
+    margin: 10rem;
+    margin-top: 0;
 }

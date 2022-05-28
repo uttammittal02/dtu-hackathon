@@ -33,7 +33,7 @@ const Predict = () => {
             <FormControl fullWidth>
                 <TextField
                     id="standard-basic"
-                    label="Rating"
+                    label="Rating (out of 10)"
                     variant="standard"
                     value={rating}
                     onChange={(e) => setRating(e.target.value)}
@@ -42,7 +42,7 @@ const Predict = () => {
             <FormControl fullWidth>
                 <TextField
                     id="standard-basic-2"
-                    label="Discount(%)"
+                    label="Discount(upto 5%)"
                     variant="standard"
                     value={discount}
                     onChange={(e) => setDiscount(e.target.value)}
