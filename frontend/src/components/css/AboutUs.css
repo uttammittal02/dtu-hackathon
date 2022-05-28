@@ -3,11 +3,27 @@
     font-size: 40px;
     text-decoration: underline;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about-us-container {
     display: flex;
-    justify-content: space-evenly;
+
+    justify-content:space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+
     flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 96vw;
+    margin: auto;
+    gap: 10px 30px;
 }
+
+@media screen and (max-width: 815px) {
+    .about-us-heading {
+        font-size: 30px;
+    }
+}
+
