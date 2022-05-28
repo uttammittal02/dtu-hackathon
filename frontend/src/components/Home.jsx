@@ -7,7 +7,6 @@ import thinkingAnimation from '../assets/thinkinganimation.json';
 import developerAnimation from '../assets/webdevelopment.json';
 import "./css/Home.css";
 import { Link } from "react-router-dom";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaPython } from 'react-icons/fa';
 
 
 const logos = [

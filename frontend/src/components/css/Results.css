@@ -1,0 +1,14 @@
+.result{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.analysis-img{
+    flex-basis: 40%;
+}
+
+.smol-img{
+    margin: 20px;
+    flex-basis: 100%;
+}
