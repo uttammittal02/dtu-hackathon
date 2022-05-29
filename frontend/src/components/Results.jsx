@@ -76,6 +76,12 @@ function Results() {
                 <img src={g3} alt="" />
             </div>
         </div>
+<div>
+           <p>
+                Females custommers are most frequent on Fashion accesoires and Sports & travel.
+                Males customers are most frequent on Health and beauty.        
+            </p>         
+</div>
     );
 }
 
