@@ -1,20 +1,21 @@
-export const linearRegression = (rating, discount, category, payment) => {
+export const linearRegression = (rating, discount, category, payment, costprice) => {
     const values = {
-        Rating: -0.04585547,
-        discount: -2.79027955,
         category: {
-            0: -0.31365909,
-            1: -1.00786882,
-            2: 0.47200465,
-            3: 0.10098165,
-            4: 0.34548805,
-            5: 0.40305357,
+            0: 0.07477751,
+            1: -1.28411352,
+            2: 0.38353776,
+            3: 0.23707158,
+            4: 0.41537578,
+            5: 0.17335089,
         },
         payment: {
-            0: 0.15643702,
-            1: -0.19539297,
-            2: 0.03895595,
-        },
+            0: -0.04016975,
+            1: 0.00451285,
+            2: 0.0356569,
+        }
+        Rating: -0.02723889,
+        discount: -2.94148402,
+        Cost price: 0.16647424,
         intercept: 14.971974670261101,
     };
     // gross income
@@ -23,6 +24,7 @@ export const linearRegression = (rating, discount, category, payment) => {
         rating * values["Rating"] +
         discount * values["discount"] +
         values["category"][category] +
-        values["payment"][payment]
+        values["payment"][payment] +
+        costprice * values["Cost price"]
     );
 };
