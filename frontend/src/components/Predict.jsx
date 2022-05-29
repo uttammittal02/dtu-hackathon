@@ -14,6 +14,7 @@ const Predict = () => {
     const [rating, setRating] = useState(0);
     const [discount, setDiscount] = useState(0);
     const [income, setIncome] = useState(0);
+    const [costprice, setCostprice] = useState(0);
 
     const handleChangePayment = (event) => {
         setPayment(event.target.value);
@@ -24,7 +25,7 @@ const Predict = () => {
     };
 
     const handlePredict = () => {
-        setIncome(linearRegression(rating, discount, category, payment));
+        setIncome(linearRegression(rating, discount, category, payment, costprice));
     };
 
     return (
@@ -46,6 +47,16 @@ const Predict = () => {
                     variant="standard"
                     value={discount}
                     onChange={(e) => setDiscount(e.target.value)}
+                />
+            </FormControl>
+
+            <FormControl fullWidth>
+                <TextField
+                    id="standard-basic-2"
+                    label="Cost price"
+                    variant="standard"
+                    value={costprice}
+                    onChange={(e) => setCostprice(e.target.value)}
                 />
             </FormControl>
 
@@ -89,7 +100,7 @@ const Predict = () => {
 
             {income > 0 && (
                 <p>
-                    The gross income (%age) is{" "}
+                    The gross income is{" "}
                     {Math.round(income * 1000) / 1000}
                 </p>
             )}
