@@ -89,7 +89,7 @@ const Predict = () => {
 
             {income > 0 && (
                 <p>
-                    The gross income (%age) is{" "}
+                    The gross income is{" "}
                     {Math.round(income * 1000) / 1000}
                 </p>
             )}
